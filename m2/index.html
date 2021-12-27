@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <title>Ремонт квартиры под ключ, капитальный ремонт квартир в новостройке и вторичке, калькулятор расчета ремонта - Метр Квадратный</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top__titles">
+                    <p class="header__top__titles__text p">Частным лицам</p>
+                    <p class="header__top__titles__text">Риелторам и агентствам</p>
+                    <p class="header__top__titles__text">Партнёрам</p>
+                </div>
+                <div class="header__top__loc">
+                    <p class="header__top__loc__text">Москва</p>
+                </div>
+            </div>
+           <div class="header__bottom">
+            <div class="header__bottom__title">
+                <span style="cursor: pointer;">
+                    <svg width="58" height="52" viewBox="0 0 58 52" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 0H58V41H41V52H0V11H17V0Z" fill="#3216B5"></path><path d="M44.157 27.392V24.6531H37.5997V24.6298C39.9124 23.6013 43.9483 21.8471 43.9483 18.1997C43.9483 15.3184 41.5538 12.8572 38.1712 12.8572C34.7887 12.8572 33.0611 15.1883 32.3001 17.2899L34.8036 18.2698C35.3685 16.5165 36.363 15.4468 38.1945 15.4468C39.794 15.4468 41.1117 16.6404 40.9809 18.223C40.8122 20.2646 38.6293 21.7447 36.6206 22.8487C35.0867 23.692 32.7112 24.889 32.7112 24.889V27.392H44.157Z" fill="white"></path><path d="M12.0522 24.663V38.3574H15.0083V28.0866L19.2383 38.3574H21.4807L25.6344 28.0866V38.3574H28.6158V24.663H24.3094L20.334 34.4851L16.3333 24.663H12.0522Z" fill="white"></path></svg>
+                </span>
+                <h4 class="header__bottom__title__title">Поиск</h4>
+                <h4 class="header__bottom__title__title">Ипотека</h4>
+                <h4 class="header__bottom__title__title">Покупка онлайн</h4>
+                <h4 class="header__bottom__title__title s">Ремонт</h4>
+                <h4 class="header__bottom__title__title">Сервисы</h4>
+                <img src="https://cdn.m2.ru/assets/file-upload-server/79d4b22c91a9e7476efcd27c1c19305a.svg" alt="partner logo">
+            </div>
+            <div class="header__bottom__icons">
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM12 18.25C10.5714 17.2582 9.20913 16.1399 8.03308 14.8556C6.9488 13.6716 6 12.2648 6 10.8876C6 9.05766 7.48227 7.25 9.41958 7.25C10.1427 7.25 10.7819 7.47344 11.3333 7.85365C11.5244 7.98538 11.7212 8.21712 11.8887 8.41426C11.9275 8.45997 11.9648 8.50381 12 8.54412C12.0352 8.50381 12.0725 8.45997 12.1113 8.41427C12.2788 8.21712 12.4756 7.98538 12.6667 7.85365C13.2181 7.47344 13.8573 7.25 14.5804 7.25C16.5177 7.25 18 9.05766 18 10.8876C18 12.2648 17.0512 13.6716 15.9669 14.8556C14.7909 16.1399 13.4286 17.2582 12 18.25Z"></path></svg>
+                </span>
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11zm5-5V7H7v11l5-2.823L17 18z" fill="currentColor"></path></svg>
+                </span>
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11zm-1-12V6h2v5h5v2h-5v5h-2v-5H6v-2h5z"></path></svg>
+                </span>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                    <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1C6.262 1 1.55 5.394 1.045 11h10.127L8.879 8.707l1.414-1.414L15 12l-4.707 4.707-1.414-1.414L11.172 13H1.045C1.55 18.607 6.262 23 12 23z" fill="currentColor"></path></svg>
+                    </span>
+                    <p class="header__top__loc__text">Войти</p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="about">
+            <div class="about__title">
+                <h1 class="about__title__title">Новая норма ремонта</h1>
+                <p class="about__title__text">Теперь ремонт — это просто, понятно и доступно. Все документы, этапы и стоимость — в одном окне. </p>
+                <div>
+                    <button class="about__title__btn">Оставить заявку</button>
+                </div>
+            </div>
+            <div>
+                <img style="width: 600px; height: 500px;" src="img/2.jfif" alt="photo">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="step">
+            <div class="container">
+             <h1 class="tt">Ремонт из двух шагов</h1>
+             <div class="step-card">
+                 <div class="step-card__titles">
+                     <p class="step-card__texte">Шаг 1</p>
+                     <p class="card__titles__title">Предчистовая отделка</p>
+                     <p class="card__titles__text">По планировочному решению исполнитель зальёт стяжку, возведёт перегородки, выровняет стены, проведёт водоснабжение, канализацию и электрику.</p>
+                     <ul class="ul">
+                         <li class="li">Быстрый старт без проекта.</li>
+                         <li class="li">Сроки до 45 дней.</li>
+                         <li class="li">Гарантия — 2 года.</li>
+                         <li class="li">Цена известна заранее.</li>
+                     </ul>
+                     <p class="card__titles__text">Стоимость, включая материалы и работы:</p>
+                     <p class="card__titles__number">11 490 ₽ за м²</p>
+                     <div>
+                         <button class="card__titles__btn">Подробнее</button>
+                     </div>
+                 </div>
+                 <div class="rasm">
+                     <img style="width: 564px; height: 760px; margin-top: -30px; margin-left: 30px;" src="img/devor.jpeg" alt="">
+                 </div>
+             </div>
+        </div>
+
+        <div class="container">
+            <div class="step-card r">
+                <div class="step-card__titles">
+                    <p class="step-card__texte">Шаг 2</p>
+                    <p class="card__titles__title">Чистовая отделка</p>
+                    <p class="card__titles__text">По согласованному с вами техническому проекту исполнитель сделает чистовую отделку, установит двери, сантехнику и розетки.</p>
+                    <ul class="ul">
+                        <li class="li">План ремонта с чертежами.</li>
+                        <li class="li">Заказ чистовых материалов.</li>
+                        <li class="li">Гарантия — 2 года.</li>
+                        <li class="li">Цена зависит от проекта.</li>
+                    </ul>
+                    <p class="card__titles__text">Стоимость, включая материалы и работы:</p>
+                    <p class="card__titles__number">от 10 410 ₽ за м² </p>
+                </div>
+                <div class="rasm">
+                    <img style="width: 564px; height: 760px; margin-top: -30px; margin-left: 30px;" src="img/kreslo.jpeg" alt="">
+                </div>
+            </div>
+       </div>
+
+            
+    </div>
+
+    <div class="text">
+        <div class="container">
+            <p class="text__text">Вы можете выбрать только первый шаг и заказать работы по предчистовой отделке, а чистовую отделку заказать в другом месте</p>
+        </div>
+    </div>
+
+
+    <div style="background-color: #f3f1f8; padding: 50px;">
+    <div class="container">
+            <div class="section">
+                <div class="section__card">
+                    <img class="section__card__img" src="img/block.png" alt="">
+                    <p class="section__card__title">Ваши деньги в безопасности</p>
+                    <p class="section__card__text">Средства хранятся на специальном счёте в банке ВТБ и списываются поэтапно после вашего одобрения.</p>
+                </div>
+    
+                <div class="section__card">
+                    <img class="section__card__img" src="img/user.png" alt="">
+                    <p class="section__card__title">Проверенные исполнители</p>
+                    <p class="section__card__text">Мы работаем только с надёжными компаниями.</p>
+                </div>
+    
+                <div class="section__card">
+                    <img class="section__card__img" src="img/calculator.png" alt="">
+                    <p class="section__card__title">Полная прозрачность</p>
+                    <p class="section__card__text">Стоимость ремонтных работ фиксируется в договоре, а весь процесс отражается в личном кабинете.</p>
+                </div>
+            </div>
+    
+            <div class="form">
+                <div class="form__div">
+                    <h2 class="form__title">Оставьте заявку, и мы с вами свяжемся</h2>
+                    <div class="form__search">
+                        <input class="form__search__input" type="text" placeholder="Имя">
+                        <input class="form__search__input" type="number" placeholder="Телефон">
+                        <button class="form__search__btn">Отправить</button>
+                    </div>
+                    <p class="form__text">Нажимая «Отправить», я даю на обработку персональных данных и дальнейшую коммуникацию.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div style="background-color: #fff; padding: 50px;">
+            <div class="container">
+                <div class="service">
+                <div class="service__title">
+                    <p class="service__title__title">Как работает сервис</p>
+                    <p class="service__title__text d">Все расчёты за ремонтные работы происходят безопасным способом: деньги хранятся на специальном счёте и списываются с вашего согласия, если вы принимаете результат.</p>
+                    <div class="service__list">
+                        <p class="service__title__number">1</p>
+                        <p class="service__title__text">Вы переводите средства за ремонтные работы на специальный счёт в банке ВТБ.</p>
+                    </div>
+    
+                    <div class="service__list">
+                        <p class="service__title__number">2</p>
+                        <p class="service__title__text">Исполнитель видит, что деньги поступили, и приступает к работе.</p>
+                    </div>
+    
+                    <div class="service__list">
+                        <p class="service__title__number">3</p>
+                        <p class="service__title__text">Если работы выполнены и замечаний нет – исполнитель получает оплату.</p>
+                    </div>
+                </div>
+                <div class="service__img">
+                    <img style="width: 504px; height: 521px;" src="img/remonty.jpeg" alt="">
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="container">
+        <p class="tx">Управляйте ремонтом онлайн</p>
+        <div class="cards">
+            <div class="cards__card">
+                <img style="width: 320px; height: 270px;" src="img/p1.jfif" alt="">
+                <p class="cards__card__text">Подпишите договор</p>
+            </div>
+    
+            <div class="cards__card">
+                <img style="width: 320px; height: 270px;" src="img/p2.jfif" alt="">
+                <p class="cards__card__text">Следите за ходом ремонта</p>
+            </div>
+    
+    
+            <div class="cards__card">
+                <img style="width: 320px; height: 270px;" src="img/p3.jfif" alt="">
+                <p class="cards__card__text">Оплачивайте этапы</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="background-color: #f3f1f8; padding: 50px;">
+            <div class="step-card">
+                <div class="step-card__titles">
+                    <p class="step-card__texte">Дизайн-проект</p>
+                    <p class="card__titles__title">Создайте свой интерьер вместе с дизайнером</p>
+                    <p class="card__titles__text">Полный набор строительных чертежей, 3D-визуализация, коллаж, подбор отделочных материалов и мебели.</p>
+        
+                    <br>
+                    <p class="card__titles__number">1 800 ₽ за м² </p>
+                    <div>
+                        <button class="card__titles__btn">Подробнее</button>
+                    </div>
+                </div>
+                <div style="margin-left: 1px;" class="rasm">
+                    <img style="width: 564px; height: 572px; margin-top: -30px; " src="img/mebel.jfif" alt="">
+                </div>
+            </div>
+            
+    
+            
+            <div class="calculator">
+                <div class="calculator__titles">
+                    <p class="calculator__titles__title">Калькулятор ремонта</p>
+                    <p class="calculator__titles__text">Оцените стоимость ремонта онлайн за несколько минут</p>
+                    <div class="radio">
+                        <input label="Новостройка" type="radio" id="male" name="gender" value="male" checked>
+                        <input label="Вторичка" type="radio" id="male" name="gender" value="female">
+                    </div>
+                    <input class="calculator__titles__input" type="text" placeholder="Укажите площадь квартиры, м2">
+                    <div class="btns">
+                        <button class="card__titles__btn">К следующему вопросу</button>
+                    </div>
+                </div>
+                <div class="calculator__img">
+                    <img style="width: 551px; height:486px" src="img/stul.jfif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slider">
+            <div class="slider__titles">
+                <p class="slider__titles__title">Что говорят наши клиенты</p>
+                
+                <div class="lines">
+                    <div class="left">
+                        <img src="img/chapga.svg" alt="">
+                    </div>
+                    <div class="left t">
+                        <img src="img/chapga.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <span>
+                    <svg width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4844 27.0377L30.3867 54L14.9023 54L2.42661e-06 27.0377L14.9023 -5.34298e-06L30.3867 -7.6417e-06L15.4844 27.0377ZM41.0977 27.0377L56 54L40.5156 54L25.6133 27.0377L40.5156 -9.14537e-06L56 -1.14441e-05L41.0977 27.0377Z" fill="#3216B5"></path></svg>
+                </span>
+                <div class="slider__slide__titles">
+                    <p class="slider__slide__titles__text">Меня познакомили с дизайнером Анастасией, она отрисовала проект квартиры, давала свои рекомендации,слушала и направляла мои мысли в нужное русло.</p>
+                    <p class="slider__slide__titles__text">Сначала я попробовал предчистовую отделку – вайтбокс. До сих пор не помню названия компании, так как не занимался поиском.</p>
+                    <p class="slider__slide__titles__text">Ответственный за объект Вадим Сиваков просто космос! Когда нужно он держал в курсе событий, в остальных случаях не трогал. Когда мы закончили, я решил что и чистовую отделку доверю той же компании.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="keys" style="background-color: #f3f1f8; padding: 50px;">
+        <div class="container">
+            <p class="keys__text">Кейсы</p>
+            <div class="keys__title">
+                <p class="keys__title__text">Подберём решение под любой бюджет и вкус</p>
+                <div style="display: flex; flex-direction: row; gap: 8px; align-items: center;" class="gallery-block-module--slideArrows--1btDR">
+                    <div class="gallery-block-module--slideArrow--3CTC0 gallery-block-module--slideArrowLeft--ky6Vy"><img class="gallery-block-module--slideArrowImg--2Yllr" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA0MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDRDMCAxLjc5MDg2IDEuNzkwODYgMCA0IDBIMzZDMzguMjA5MSAwIDQwIDEuNzkwODYgNDAgNFY1NkM0MCA1OC4yMDkxIDM4LjIwOTEgNjAgMzYgNjBINEMxLjc5MDg2IDYwIDAgNTguMjA5MSAwIDU2VjRaIiBmaWxsPSIjMzQyNTc2IiBmaWxsLW9wYWNpdHk9IjAuMDgiLz4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjIuNzgwMyAyMC4yNUwyMy44NDEgMjEuMzEwN0wxNS4zNzEzIDI5Ljc4MDNMMjMuODQxIDM4LjI1TDIyLjc4MDMgMzkuMzEwN0wxMy4yNSAyOS43ODAzTDIyLjc4MDMgMjAuMjVaIiBmaWxsPSIjMUYxRjJFIi8+Cjwvc3ZnPgo=" alt="<"></div><div class="gallery-block-module--slideArrow--3CTC0 gallery-block-module--slideArrowRight--2dJmV"><img class="gallery-block-module--slideArrowImg--2Yllr" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA0MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gPHBhdGggZD0iTTQwIDU2QzQwIDU4LjIwOTEgMzguMjA5MSA2MCAzNiA2MEw0IDYwQzEuNzkwODYgNjAgMCA1OC4yMDkxIDAgNTZMMCA0QzAgMS43OTA4NiAxLjc5MDg2IDAgNCAwTDM2IDBDMzguMjA5MSAwIDQwIDEuNzkwODYgNDAgNEw0MCA1NloiIGZpbGw9IiMzNDI1NzYiIGZpbGwtb3BhY2l0eT0iMC4wOCIvPiA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE3LjIxOTcgMzkuNzVMMTYuMTU5IDM4LjY4OTNMMjQuNjI4NyAzMC4yMTk3TDE2LjE1OSAyMS43NUwxNy4yMTk3IDIwLjY4OTNMMjYuNzUgMzAuMjE5N0wxNy4yMTk3IDM5Ljc1WiIgZmlsbD0iIzFGMUYyRSIvPiA8L3N2Zz4K" alt=">"></div>
+                </div>
+            </div>
+            <div class="keys__cards">
+                <div class="keys__cards__card">
+                    <img style="width: 480px; height: 352px;" src="img/mx.jpg" alt="">
+                    <p class="keys__cards__card__text">Ремонт в ЖК «Эталон Сити», 33 м</p>
+                    <p class="keys__cards__card__texttt">Стоимость работ: 480 000 ₽</p>
+                </div>
+                <div class="keys__cards__card2">
+                    <img style="width: 480px; height: 352px;" src="img/yx.jpg" alt="">
+                    <p class="keys__cards__card__text">Ремонт в ЖК «Царская столица», 117 м</p>
+                    <p class="keys__cards__card__texttt">Стоимость работ: 1 730 400 ₽</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordionn">
+            <p class="accordionn__text">Популярные вопросы</p>
+            <div class="panels">
+                <button class="accordion">Как проходит ремонт под ключ, заказанный через ваш сервис?</button>
+                    <div class="panel">
+                        <p>Ремонт квартиры под ключ — это полное обустройство квартиры. Вам останется оборудовать кухню, привезти и расставить мебель. Важное отличие такого ремонта  — наличие сметы и технического проекта, где подробно описан список ремонтных работ. Вы будете знать точную стоимость и сроки ремонта уже до его начала.</p>
+                        <p>Ремонт под ключ обычно состоит из нескольких этапов:</p>
+                        <p>— Полный демонтаж отделки. Услуга не понадобится в новостройках, где нет отделки или есть только черновая отделка.</p>
+                        <p>— Черновая отделка: разводка электрики, сантехнические работы, стяжка пола, выравнивание стен и потолка.</p>
+                        <p>— Чистовая отделка: монтаж напольных покрытий, отделка стен и потолков, установка дверей, плинтусов, сантехники, освещения и розеток.</p>
+                        <p>— Вывоз мусора и уборка строительной пыли.
+                            На этапе формирования проекта и сметы можно заказать дополнительные опции: снос и возведение перегородок, звукоизоляцию, монтаж тёплых полов, кондиционеров, замену окон и входной двери.</p>
+                    </div>
+        
+                        <button class="accordion">Что такое технический дизайн-проект и зачем он нужен?</button>
+                    <div class="panel">
+                        <p>Ремонт квартиры под ключ — это полное обустройство квартиры. Вам останется оборудовать кухню, привезти и расставить мебель. Важное отличие такого ремонта  — наличие сметы и технического проекта, где подробно описан список ремонтных работ. Вы будете знать точную стоимость и сроки ремонта уже до его начала.</p>
+                        <p>Ремонт под ключ обычно состоит из нескольких этапов:</p>
+                        <p>— Полный демонтаж отделки. Услуга не понадобится в новостройках, где нет отделки или есть только черновая отделка.</p>
+                        <p>— Черновая отделка: разводка электрики, сантехнические работы, стяжка пола, выравнивание стен и потолка.</p>
+                        <p>— Чистовая отделка: монтаж напольных покрытий, отделка стен и потолков, установка дверей, плинтусов, сантехники, освещения и розеток.</p>
+                        <p>— Вывоз мусора и уборка строительной пыли.
+                            На этапе формирования проекта и сметы можно заказать дополнительные опции: снос и возведение перегородок, звукоизоляцию, монтаж тёплых полов, кондиционеров, замену окон и входной двери.</p>
+
+                    </div>
+        
+                        <button class="accordion">Кто покупает материалы для отделки?</button>
+                        <div class="panel">
+                            <p>Ремонт квартиры под ключ — это полное обустройство квартиры. Вам останется оборудовать кухню, привезти и расставить мебель. Важное отличие такого ремонта  — наличие сметы и технического проекта, где подробно описан список ремонтных работ. Вы будете знать точную стоимость и сроки ремонта уже до его начала.</p>
+                            <p>Ремонт под ключ обычно состоит из нескольких этапов:</p>
+                            <p>— Полный демонтаж отделки. Услуга не понадобится в новостройках, где нет отделки или есть только черновая отделка.</p>
+                            <p>— Черновая отделка: разводка электрики, сантехнические работы, стяжка пола, выравнивание стен и потолка.</p>
+                            <p>— Чистовая отделка: монтаж напольных покрытий, отделка стен и потолков, установка дверей, плинтусов, сантехники, освещения и розеток.</p>
+                            <p>— Вывоз мусора и уборка строительной пыли.
+                                На этапе формирования проекта и сметы можно заказать дополнительные опции: снос и возведение перегородок, звукоизоляцию, монтаж тёплых полов, кондиционеров, замену окон и входной двери.</p>
+    
+                        </div>
+
+                        <button class="accordion">Как я могу быть уверенным в качестве ремонта?</button>
+                        <div class="panel">
+                            <p>Ремонт квартиры под ключ — это полное обустройство квартиры. Вам останется оборудовать кухню, привезти и расставить мебель. Важное отличие такого ремонта  — наличие сметы и технического проекта, где подробно описан список ремонтных работ. Вы будете знать точную стоимость и сроки ремонта уже до его начала.</p>
+                            <p>Ремонт под ключ обычно состоит из нескольких этапов:</p>
+                            <p>— Полный демонтаж отделки. Услуга не понадобится в новостройках, где нет отделки или есть только черновая отделка.</p>
+                            <p>— Черновая отделка: разводка электрики, сантехнические работы, стяжка пола, выравнивание стен и потолка.</p>
+                            <p>— Чистовая отделка: монтаж напольных покрытий, отделка стен и потолков, установка дверей, плинтусов, сантехники, освещения и розеток.</p>
+                            <p>— Вывоз мусора и уборка строительной пыли.
+                                На этапе формирования проекта и сметы можно заказать дополнительные опции: снос и возведение перегородок, звукоизоляцию, монтаж тёплых полов, кондиционеров, замену окон и входной двери.</p>
+    
+                        </div>
+                </div>
+        </div>
+
+        <div class="blog">
+            <div class="blog__title">
+                <div class="blog__title-1">
+                    <p class="blog__title-1__text">Блог</p>
+                    <p class="blog__title-1__text2">Смотреть все</p>
+                </div>
+                <p class="blog__title__text">Делимся лайфхаками в ремонте</p>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <div class="blog__cards">
+                    <div class="blog__cards__card">
+                        <img style="width: 359px; height: 261px;" src="img/remont1.webp" alt="">
+                        <div class="blog__cards__card__titles">
+                            <div class="blog__cards__card__titles__top">
+                                <p class="blog__cards__card__titles__top__titlet">Ремонт</p>
+                                <p class="blog__cards__card__titles__top__title">22 июня</p>
+                            </div>
+                            <div class="blog__cards__card__titles__bottom">
+                                <p class="blog__cards__card__titles__bottom__text">Десять частых ошибок в ремонте</p>
+                                <p class="blog__cards__card__titles__bottom__text2">6 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="blog__cards">
+                    <div class="blog__cards__card">
+                        <img style="width: 359px; height: 261px;" src="img/remont2.webp" alt="">
+                        <div class="blog__cards__card__titles">
+                            <div class="blog__cards__card__titles__top">
+                                <p class="blog__cards__card__titles__top__titlet">Ремонт</p>
+                                <p class="blog__cards__card__titles__top__title">21 июня</p>
+                            </div>
+                            <div class="blog__cards__card__titles__bottom">
+                                <p class="blog__cards__card__titles__bottom__text">Почему дизайн-проект — это не только картинки</p>
+                                <p class="blog__cards__card__titles__bottom__text2">6 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="blog__cards">
+                    <div class="blog__cards__card">
+                        <img style="width: 359px; height: 261px;" src="img/remont3.webp" alt="">
+                        <div class="blog__cards__card__titles">
+                            <div class="blog__cards__card__titles__top">
+                                <p class="blog__cards__card__titles__top__titlet">Ремонт</p>
+                                <p class="blog__cards__card__titles__top__title">21 июня</p>
+                            </div>
+                            <div class="blog__cards__card__titles__bottom">
+                                <p class="blog__cards__card__titles__bottom__text">Из чего состоит ремонт квартиры</p>
+                                <p class="blog__cards__card__titles__bottom__text2">6 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inputs">
+        <div class="container">
+            <p class="inputs__title">Оставьте заявку, и мы с вами свяжемся</p>
+            <div class="inputs__inputs">
+                <input class="inputs__inputs__input" type="text" placeholder="Имя">
+                <input class="inputs__inputs__input" type="text" placeholder="Телефон">
+                <input class="inputs__inputs__input" type="text" placeholder="Почта">
+            </div>
+            <div class="inputs__btns">
+                <p class="inputs__btns__text">Нажимая «Отправить», я даю согласие на обработку персональных данных и дальнейшую коммуникацию.</p>
+                <button class="inputs__btns__btn">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="footer-top">
+            <div class="container">
+            <p class="o">Ремонт</p>
+            <div class="footer-top__repair">
+                <div class="footer-top__repair__titles">
+                    <p class="footer-top__repair__titles__text-top">Тип ремонта</p>
+                    <p class="top__repair__titles__text">Под ключ</p>
+                    <p class="top__repair__titles__text">Черновой</p>
+                    <p class="top__repair__titles__text">Предчистовой</p>
+                    <p class="top__repair__titles__text">Чистовой</p>
+                </div>
+
+                <div class="footer-top__repair__titles">
+                    <p class="footer-top__repair__titles__text-top">Тип недвижимости</p>
+                    <p class="top__repair__titles__text">Однокомнатная</p>
+                    <p class="top__repair__titles__text">Двухкомнатная</p>
+                    <p class="top__repair__titles__text">Трехкомнатная</p>
+                    <p class="top__repair__titles__text">Четырехкомнатная</p>
+                </div>
+
+                <div class="footer-top__repair__titles">
+                    <p class="footer-top__repair__titles__text-top">Москва</p>
+                    <p class="top__repair__titles__text">Москва</p>
+                    <p class="top__repair__titles__text">Новая Москва</p>
+                    <p class="top__repair__titles__text">Московская область</p>
+                    <p class="top__repair__titles__text">Митино</p>
+                </div>
+
+                <div class="footer-top__repair__titles">
+                    <p class="footer-top__repair__titles__text-top">Санкт-Петербург</p>
+                    <p class="top__repair__titles__text">Санкт-Петербург</p>
+                    <p class="top__repair__titles__text">Ленинградская область</p>
+                    <p class="top__repair__titles__text">Приморский</p>
+                    <p class="top__repair__titles__text">Московский</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer>
+            <div class="footer__top">
+                <div class="footrt__top__about">
+                    <div class="footrt__top__about__titles-top">
+                        <img style="width: 124px; height: 32px;" src="img/footer__logo.svg">
+                        <p class="footrt__top__about__titles-top__text">Ваш регион</p>
+                        <p class="footrt__top__about__titles-top__text textw" style="margin-top: -20px;">Москва</p>
+                    </div>
+                    <div class="footrt__top__about__titles">
+                        <p class="footrt__top__about__titles__text">О компании</p>
+                        <p class="footrt__top__about__titles__text">Вакансии</p>
+                        <p class="footrt__top__about__titles__text">Центр поддержки клиентов</p>
+                        <p class="footrt__top__about__titles__text">Наши партнёры</p>
+                        <p class="footrt__top__about__titles__text">Журнал</p>
+                    </div>
+                    <div class="footrt__top__about__titles">
+                        <p class="footrt__top__about__titles__text">Условия использования</p>
+                        <p class="footrt__top__about__titles__text">Правила оплаты</p>
+                        <p class="footrt__top__about__titles__text">Политика конфиденциальности</p>
+                        <p class="footrt__top__about__titles__text">Закупки</p>
+                        <p class="footrt__top__about__titles__text">Клиентские соглашения</p>
+                    </div>
+                    <div class="footrt__top__about__social">
+                        <div class="footrt__top__about__social__icons">
+                            <i class="fab fa-instagram-square"></i>
+                            <p class="footrt__top__about__social__text">Instagram</p>
+                        </div>
+
+                        <div class="footrt__top__about__social__icons">
+                            <i class="fab fa-vk"></i>
+                            <p class="footrt__top__about__social__text">ВКонтакте</p>
+                        </div>
+
+                        <div class="footrt__top__about__social__icons">
+                            <i class="fab fa-facebook"></i>                            
+                            <p class="footrt__top__about__social__text">Facebook</p>
+                        </div>
+
+                        <div class="footrt__top__about__social__icons">
+                            <i class="fab fa-telegram"></i>                            
+                            <p class="footrt__top__about__social__text">Telegram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer__top">
+                <div class="footrt__top__about">
+                    <div class="footrt__top__about__titles">
+                        <p class="footrt__top__about__titles__text">Поиск</p>
+                        <p class="footrt__top__about__titles__text">Покупка</p>
+                        <p class="footrt__top__about__titles__text">Аренда</p>
+                        <p class="footrt__top__about__titles__text">Новостройки</p>
+                        <p class="footrt__top__about__titles__text">Вторичное жилье</p>
+                    </div>
+                    <div class="footrt__top__about__titles">
+                        <p class="footrt__top__about__titles__text">Ипотека</p>
+                        <p class="footrt__top__about__titles__text">Заявка на ипотеку</p>
+                    </div>
+                    <div class="footrt__top__about__titles">
+                        <p class="footrt__top__about__titles__text">Сервисы</p>
+                        <p class="footrt__top__about__titles__text">Покупка онлайн</p>
+                        <p class="footrt__top__about__titles__text">Защита сделки</p>
+                        <p class="footrt__top__about__titles__text">Проверка недвижимости</p>
+                        <p class="footrt__top__about__titles__text">Расчет стоимости недвижимости</p>
+                    </div>
+                    <div class="footrt__top__about__titles">
+                        <p class="footrt__top__about__titles__text">Ремонт</p>
+                        <p class="footrt__top__about__titles__text">Ремонт под ключ</p>
+                        <p class="footrt__top__about__titles__text">Предчистовая отделка</p>
+                        <p class="footrt__top__about__titles__text">Дизайн-проект</p>
+                        <p class="footrt__top__about__titles__text">Приемка квартиры</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom__about">
+                    <div class="footer-bottom__number">
+                        <div class="footer-bottom__number__title">
+                            <p class="footer-bottom__number__title oo">+7 495 103 93 09</p>
+                            <p class="footer-bottom__number__title">С 9:00 до 21:00 МСК</p>
+                        </div>
+                        <div class="footer-bottom__btn">
+                            <button class="footer-bottom__btn__btn">Оставить обратную связь</button>
+                        </div>
+                    </div>
+                    <div class="footer-bottom__save">
+                        <img style="width: 152px; height: 44px;" src="img/appstore.svg" alt="">
+                        <img style="width: 152px; height: 44px;" src="img/play.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
